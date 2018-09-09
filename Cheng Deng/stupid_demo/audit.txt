@@ -1,0 +1,2 @@
+[RECORD_AUDIT: 2018-09-09 20:14:44]--CMD_USER:create table person;
+[RECORD_AUDIT: 2018-09-09 20:15:50]--CMD_USER:quit
