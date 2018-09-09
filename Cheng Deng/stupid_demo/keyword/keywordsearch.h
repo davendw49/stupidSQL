@@ -1,6 +1,6 @@
-#ifndef KEYWORDSEARCH
-#define KEYWORDSEARCH
+#ifndef KEYWORDSEARCH_H
+#define KEYWORDSEARCH_H
 
-void initkeywordSearch();
+void keywordSearch();
 
 #endif

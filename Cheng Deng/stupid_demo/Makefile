@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -c
 LFLAGS = -Wall
 #DEBUG = -g
-OBJS = BPlusTreeInt.o BPlusTreeFloat.o BPlusTreeStr.o BPlusTree.o RecordInt.o RecordFloat.o RecordStr.o Record.o main.o
+OBJS = BPlusTreeInt.o BPlusTreeFloat.o BPlusTreeStr.o BPlusTree.o RecordInt.o RecordFloat.o RecordStr.o Record.o keywordsearch.o audit.o main.o
 OUTPUT = -lreadline -lncurses -o stupidSQL
 
 all: test
@@ -34,8 +34,17 @@ RecordFloat.o: Record/Record.h Record/RecordFloat.c stupidSQL.h BPlusTree/BPlusT
 RecordStr.o: Record/Record.h Record/RecordStr.c stupidSQL.h BPlusTree/BPlusTree.h BPlusTree/BPlusTreeStr.h
 	$(CC) $(CFLAGS) $(DEBUG) Record/RecordStr.c
 
+keywordsearch.o: keyword/keywordsearch.h keyword/keywordsearch.c
+	$(CC) $(CFLAGS) $(DEBUG) keyword/keywordsearch.c
+
+audit.o: Audit/audit.h Audit/audit.c
+	$(CC) $(CFLAGS) $(DEBUG) Audit/audit.c
+
 main.o: main.c stupidSQL.h BPlusTree/BPlusTree.h interpreter.c
 	$(CC) $(CFLAGS) $(DEBUG) main.c
 
 clean:
 	rm -f $(OBJS) stupidSQL
+
+clean_audit:
+	rm audit.txt

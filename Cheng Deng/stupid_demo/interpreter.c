@@ -153,7 +153,7 @@ struct AttributeRecord GetAttribute(Table table,char* name,int* attrIndex){//nam
     if(i==table->attrNum) {sprintf(error_message,"column \"%s\" not found in the table",name); TRUEFLAG=F; return x; }
     *attrIndex=i;
     return table->attributes[i];
-}
+} 
 struct TableRecord GetTable(char* table_name){
     static char buffer_name[256]={0}; static struct TableRecord buffer_t;
     if(0) if(strcmp(table_name,buffer_name)==0) return buffer_t;

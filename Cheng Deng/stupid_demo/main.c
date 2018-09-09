@@ -10,6 +10,8 @@
 #include "BPlusTree/BPlusTreeFloat.h"
 #include "BPlusTree/BPlusTreeStr.h"
 #include "Catalog/Catalog.h"
+#include "keyword/keywordsearch.h"
+#include "Audit/audit.h"
 #include "interpreter.c"
 
 char storage_command[9999];
@@ -58,6 +60,16 @@ static int IsUserQuitCmd(char *pszCmd)
     }
 
     return 0;
+}
+
+static int IsKeyWordCmd(char *pszCmd)
+{
+    char* keySignal = "select * k\"";
+    if (strncasecmp(pszCmd,keySignal,11)==0) {
+        printf("keyword mode\n");
+        return 1;
+    }
+    else return 0;
 }
 
 
@@ -149,18 +161,30 @@ int main(void){
     InitReadLine();
     while(1) {
         char *pszCmdLine = ReadCmdLine();
+
+        saveToAuditFile(pszCmdLine);
+
+        // printf("%s\n", pszCmdLine);
         if(IsUserQuitCmd(pszCmdLine))
         {
             free(pszLineRead);
             break;
+        }
+
+        if (IsKeyWordCmd(pszCmdLine))
+        {
+            printf("yes\n");
+            keywordSearch();
         }
         /*if(in("exec",pszCmdLine)) {
             FLAG_RECORD_INFO=0;printf("[Debug]Disable output\n");
             interpreter_more(pszCmdLine,storage_command);
             FLAG_RECORD_INFO=1;printf("[Debug]Enable output\n");
            }else */
-        interpreter_more(pszCmdLine,storage_command);
-        FLAG_RECORD_INFO=1;
+        else {
+            interpreter_more(pszCmdLine,storage_command);
+            FLAG_RECORD_INFO=1;
+        }
         //FLAG_INPUT_FINISH=1;
     }
 

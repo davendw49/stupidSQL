@@ -1,11 +1,4 @@
-create table person (
-	height float unique,
-	pid int,
-	name char(32),
-	identity char(64) unique,
-	age int unique,
-	primary key(pid)
-);
+create table person ( height float unique, pid int, name char(32), identity char(64) unique, age int unique, primary key(pid) );
 insert into person values (1300.0, 0, "Tom", "cf0a2386-2435-423f-86b8-814318bedbc7", 0);
 insert into person values (1301.0, 1, "Tom", "e232784c-1b11-44e1-9c43-5daa9a249fe1", 1);
 insert into person values (1302.0, 2, "David", "4d35dc33-a81a-4db4-8b1a-211a62db1d92", 2);
