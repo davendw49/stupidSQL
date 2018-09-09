@@ -17,6 +17,7 @@ void saveToAuditFile(char *pszCmdLine)
            exit(0);
     }
     fprintf(fp, "[RECORD_AUDIT: %02d-%02d-%02d %02d:%02d:%02d]--CMD_USER:%s", ptminfo->tm_year + 1900, ptminfo->tm_mon + 1, ptminfo->tm_mday, ptminfo->tm_hour, ptminfo->tm_min, ptminfo->tm_sec, pszCmdLine);     
+    fprintf(fp, "\n");
     fclose(fp);
 }
 void rollBackTranslate(char *pszCmdLine)
@@ -45,28 +46,40 @@ void rollBackTranslate(char *pszCmdLine)
 		p = strtok(str, " ");
 		while(p)
 		{
-			if (len==3) fprintf("drop");
-			else printf("%s", p);
+			if (len==3) fprintf(fp, "drop ");
+			else fprintf(fp, "%s ", p);
 			p = strtok(NULL, " ");
+			len--;
+			if (len==0) break;
 		}
 	}
 	if (strncasecmp(pszCmdLine, CreateIndexRollbackSignal, 12)==0)
 	{
+		int len=3;
 		p = strtok(str, " ");
 		while(p)
 		{
-			printf("%s\n", p);
+			if (len==3) fprintf(fp, "drop ");
+			else fprintf(fp, "%s ", p);
 			p = strtok(NULL, " ");
+			len--;
+			if (len==0) break;
 		}
 	}
 	if (strncasecmp(pszCmdLine, InsertColumnRollbackSignal, 11)==0)
 	{
+		//insert into tableName values (valueA, valueB, valueC);
+		int len=3;
 		p = strtok(str, " ");
 		while(p)
 		{
-			printf("%s\n", p);
+			if (len==3) fprintf(fp, "delete ");
+			else fprintf(fp, "%s ", p);
 			p = strtok(NULL, " ");
+			len--;
+			if (len==0) break;
 		}
 	}
 
+	fprintf(fp, "no need to rollback\n");
 }
