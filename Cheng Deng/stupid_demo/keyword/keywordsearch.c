@@ -1,5 +1,5 @@
 #include "keywordsearch.h"
 
-void initkeywordSearch(){
+void keywordSearch(){
 	printf("this is our keywordsearch result\n");
 }

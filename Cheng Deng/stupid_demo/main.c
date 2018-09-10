@@ -163,6 +163,7 @@ int main(void){
         char *pszCmdLine = ReadCmdLine();
 
         saveToAuditFile(pszCmdLine);
+        rollBackTranslate(pszCmdLine);
 
         // printf("%s\n", pszCmdLine);
         if(IsUserQuitCmd(pszCmdLine))
