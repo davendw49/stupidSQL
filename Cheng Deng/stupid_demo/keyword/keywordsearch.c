@@ -64,47 +64,73 @@ char* search(char *kw)
 	return result;
 }
 
-int keywordSearch(char *kw, char* history){
-	/*FILE *fp;
-	char filename[] = "test1.index";
-	char StrLine[1024];
-	if((fp = fopen(filename,"r")) == NULL)
-	{
-		printf("error!");
-		return -1;
-	}
-	while (!feof(fp))
-	{
-		fgets(StrLine,1024,fp);
-		printf("%s\n", StrLine);
-	}
-	fclose(fp);*/
-	int i;
-	char* result = search(kw);
-	char* queryhead = "select * from ";
-	char* querytail = " where pid=";
+int keywordSearch(char *input, char* history){
+	int i,len,kwlinestart,kwlineend,tablelinestart,tablelineend,j;
+	int answer[100];
+	int time=0;
+	static char kw[]="";
+	static char tb[]="";
+	//char* cmd = "select *k breakfast from test1;";
+	char* cmd = input;
+	char queryhead[100] = "select * from ";
+	char* querytail= " where pid=";
+	len = strlen(cmd);
+	printf("%d\n", len);
 
+	for (i=0;i<len;i++)
+	{
+		if (cmd[i]==' '){
+			if (time==0) time++;
+			else if (time==1) 
+			{
+				kwlinestart = i;
+				time++;
+			}
+			else if (time==2)
+			{
+				kwlineend = i;
+				time++;
+			}
+			else if (time==3)
+			{
+				tablelinestart = i;
+				time++;
+			}
+		}
+		if (cmd[i]==';')
+		{
+			tablelineend = i;
+			break;
+		}
+	}
+	strncpy(tb,cmd+tablelinestart+1,tablelineend - tablelinestart-1);
+	printf("%d\n",strlen(tb));
+	strcat(queryhead,tb);
+	strcat(queryhead,querytail);
+	printf("%s\n", queryhead);
+	strncpy(kw,cmd+kwlinestart+1,kwlineend - kwlinestart-1);
+	
+
+	char* result = search(kw);
 	char delims[] = ",";
 	char *r = NULL;
+	char* idlist[100];
 	//printf("%s\n", result);
 	r = strtok(result, delims);
 	int pos=0;
 	while(r!= NULL )
 	{
+		char *str = malloc(sizeof(char)*strlen(queryhead));
+		strcat(strcpy(str,queryhead),r); 
 		//printf("result is \"%s\"\n", r);
-		int tmp = atoi(r);
-		answer[pos] = tmp;
-		answer[pos+1]=-1;
-		pos++;
+		//strcat(queryhead,r);
+		//strcat(queryhead,";");
+		//printf("%s\n", queryhead);
+		//idlist[pos]=r;
+		//printf("%s\n", r);
+		strcat(str,";");
+		printf("%s\n", str);
 		r=strtok(NULL,delims);
 	}
-
-	for (i=0;answer[i]!=-1;i++){
-		printf("%d\n", answer[i]);
-	}
-
-
-	// interpreter_more(pszCmdLine,storage_command);
-	printf("%s\n", result);
 	return 0;
 }

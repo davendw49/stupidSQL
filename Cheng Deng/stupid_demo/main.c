@@ -178,7 +178,7 @@ int main(void){
         if (IsKeyWordCmd(pszCmdLine))
         {
             //printf("yes\n");
-            keywordSearch("breakfast",storage_command);
+            keywordSearch(pszCmdLine,storage_command);
             //break;
         }
         /*if(in("exec",pszCmdLine)) {

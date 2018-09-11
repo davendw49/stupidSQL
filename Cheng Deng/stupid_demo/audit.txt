@@ -94,3 +94,13 @@
 [RECORD_AUDIT: 2018-09-11 20:48:25]--CMD_USER:quit
 [RECORD_AUDIT: 2018-09-11 21:08:36]--CMD_USER:select *k
 [RECORD_AUDIT: 2018-09-11 21:16:14]--CMD_USER:exit
+[RECORD_AUDIT: 2018-09-11 23:29:22]--CMD_USER:exit
+[RECORD_AUDIT: 2018-09-11 23:29:51]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-11 23:30:06]--CMD_USER:select *k breakfast;
+[RECORD_AUDIT: 2018-09-11 23:35:48]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-11 23:36:30]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-11 23:36:33]--CMD_USER:exit
+[RECORD_AUDIT: 2018-09-11 23:36:47]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-11 23:37:59]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-11 23:38:59]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-11 23:39:34]--CMD_USER:select *k breakfast from test;

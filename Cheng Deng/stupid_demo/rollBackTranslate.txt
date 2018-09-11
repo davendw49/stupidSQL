@@ -69,3 +69,13 @@
 [RECORD_AUDIT: 2018-09-11 20:37:38]--SYS_COL:no need to rollback
 [RECORD_AUDIT: 2018-09-11 21:16:14]--SYS_COL:no need to rollback
 [RECORD_AUDIT: 2018-09-11 21:08:36]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-11 23:29:22]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-11 23:29:51]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-11 23:30:06]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-11 23:35:48]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-11 23:36:30]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-11 23:36:33]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-11 23:36:47]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-11 23:37:59]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-11 23:38:59]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-11 23:39:34]--SYS_COL:no need to rollback
