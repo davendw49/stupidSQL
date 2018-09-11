@@ -34,7 +34,7 @@ RecordFloat.o: Record/Record.h Record/RecordFloat.c stupidSQL.h BPlusTree/BPlusT
 RecordStr.o: Record/Record.h Record/RecordStr.c stupidSQL.h BPlusTree/BPlusTree.h BPlusTree/BPlusTreeStr.h
 	$(CC) $(CFLAGS) $(DEBUG) Record/RecordStr.c
 
-keywordsearch.o: keyword/keywordsearch.h keyword/keywordsearch.c stupidSQL.h
+keywordsearch.o: keyword/keywordsearch.c keyword/keywordsearch.h stupidSQL.h interpreter.c  Record/Record.h BPlusTree/BPlusTree.h
 	$(CC) $(CFLAGS) $(DEBUG) keyword/keywordsearch.c
 
 audit.o: Audit/audit.h Audit/audit.c

@@ -79,3 +79,26 @@
 [RECORD_AUDIT: 2018-09-11 23:37:59]--SYS_COL:no need to rollback
 [RECORD_AUDIT: 2018-09-11 23:38:59]--SYS_COL:no need to rollback
 [RECORD_AUDIT: 2018-09-11 23:39:34]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:05:42]--SYS_COL:delete into test1 no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:03:18]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:03:14]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:02:48]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:00:51]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-11 23:59:46]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-11 23:58:28]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-11 23:58:27]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-11 23:44:57]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:05:59]--SYS_COL:delete into test1 no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:16:01]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:15:50]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:16:53]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:16:50]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:16:20]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:39:27]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:39:26]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:38:45]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:40:04]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:40:03]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:39:40]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:42:03]--SYS_COL:no need to rollback
+[RECORD_AUDIT: 2018-09-12 00:41:39]--SYS_COL:no need to rollback

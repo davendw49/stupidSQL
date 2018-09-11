@@ -1,4 +1,5 @@
 #include "keywordsearch.h"
+//#include "../interpreter.c"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -64,7 +65,7 @@ char* search(char *kw)
 	return result;
 }
 
-int keywordSearch(char *input, char* history){
+int keywordSearch(char *input){
 	int i,len,kwlinestart,kwlineend,tablelinestart,tablelineend,j;
 	int answer[100];
 	int time=0;
@@ -73,9 +74,9 @@ int keywordSearch(char *input, char* history){
 	//char* cmd = "select *k breakfast from test1;";
 	char* cmd = input;
 	char queryhead[100] = "select * from ";
-	char* querytail= " where pid=";
+	char* querytail= " where id=";
 	len = strlen(cmd);
-	printf("%d\n", len);
+	//printf("%d\n", len);
 
 	for (i=0;i<len;i++)
 	{
@@ -104,10 +105,10 @@ int keywordSearch(char *input, char* history){
 		}
 	}
 	strncpy(tb,cmd+tablelinestart+1,tablelineend - tablelinestart-1);
-	printf("%d\n",strlen(tb));
+	//printf("%d\n",strlen(tb));
 	strcat(queryhead,tb);
 	strcat(queryhead,querytail);
-	printf("%s\n", queryhead);
+	//printf("%s\n", queryhead);
 	strncpy(kw,cmd+kwlinestart+1,kwlineend - kwlinestart-1);
 	
 
@@ -129,7 +130,8 @@ int keywordSearch(char *input, char* history){
 		//idlist[pos]=r;
 		//printf("%s\n", r);
 		strcat(str,";");
-		printf("%s\n", str);
+		//printf("%s\n", str);
+		interpreter(str);
 		r=strtok(NULL,delims);
 	}
 	return 0;

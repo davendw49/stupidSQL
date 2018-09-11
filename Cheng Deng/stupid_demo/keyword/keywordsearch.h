@@ -3,7 +3,7 @@
 
 #include "../stupidSQL.h"
 
-int keywordSearch(char *kw, char* history);
+int keywordSearch(char *input);
 char* search(char *kw);
 
 #endif
