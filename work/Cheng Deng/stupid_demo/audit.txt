@@ -1,0 +1,197 @@
+[RECORD_AUDIT: 2018-09-09 20:14:44]--CMD_USER:create table person;
+[RECORD_AUDIT: 2018-09-09 20:15:50]--CMD_USER:quit
+[RECORD_AUDIT: 2018-09-11 18:07:45]--CMD_USER:exec Data/test-1000.sql
+[RECORD_AUDIT: 2018-09-11 18:07:53]--CMD_USER:;
+[RECORD_AUDIT: 2018-09-11 18:08:08]--CMD_USER:NUL
+[RECORD_AUDIT: 2018-09-11 18:08:55]--CMD_USER:exec Data/test-1000.sql
+[RECORD_AUDIT: 2018-09-11 18:08:59]--CMD_USER:;
+[RECORD_AUDIT: 2018-09-11 18:10:27]--CMD_USER:quir
+[RECORD_AUDIT: 2018-09-11 18:10:28]--CMD_USER:quit
+[RECORD_AUDIT: 2018-09-11 18:10:45]--CMD_USER:exec Data/test-1000.sql
+[RECORD_AUDIT: 2018-09-11 18:10:46]--CMD_USER:;
+[RECORD_AUDIT: 2018-09-11 18:11:05]--CMD_USER:drop index pid
+[RECORD_AUDIT: 2018-09-11 18:11:06]--CMD_USER:;
+[RECORD_AUDIT: 2018-09-11 18:11:13]--CMD_USER:create index pid
+[RECORD_AUDIT: 2018-09-11 18:11:14]--CMD_USER:;
+[RECORD_AUDIT: 2018-09-11 18:11:30]--CMD_USER:select * from where pid=89;
+[RECORD_AUDIT: 2018-09-11 18:11:40]--CMD_USER:select * from person where pid=89;
+[RECORD_AUDIT: 2018-09-11 18:11:48]--CMD_USER:drop index pid;
+[RECORD_AUDIT: 2018-09-11 18:11:51]--CMD_USER:select * from person where pid=89;
+[RECORD_AUDIT: 2018-09-11 18:11:59]--CMD_USER:select * from person where pid=89;
+[RECORD_AUDIT: 2018-09-11 18:12:03]--CMD_USER:select * from person where pid=89;
+[RECORD_AUDIT: 2018-09-11 18:12:05]--CMD_USER:select * from person where pid=89;
+[RECORD_AUDIT: 2018-09-11 18:12:06]--CMD_USER:select * from person where pid=89;
+[RECORD_AUDIT: 2018-09-11 18:12:07]--CMD_USER:select * from person where pid=89;
+[RECORD_AUDIT: 2018-09-11 18:12:08]--CMD_USER:select * from person where pid=89;
+[RECORD_AUDIT: 2018-09-11 18:12:08]--CMD_USER:select * from person where pid=89;
+[RECORD_AUDIT: 2018-09-11 18:12:09]--CMD_USER:select * from person where pid=89;
+[RECORD_AUDIT: 2018-09-11 18:12:10]--CMD_USER:select * from person where pid=89;
+[RECORD_AUDIT: 2018-09-11 18:12:11]--CMD_USER:select * from person where pid=89;
+[RECORD_AUDIT: 2018-09-11 18:12:19]--CMD_USER:create index pid;
+[RECORD_AUDIT: 2018-09-11 18:12:36]--CMD_USER:select * from person where pid=89;
+[RECORD_AUDIT: 2018-09-11 18:12:44]--CMD_USER:create index pid;
+[RECORD_AUDIT: 2018-09-11 18:13:23]--CMD_USER:exit
+[RECORD_AUDIT: 2018-09-11 18:13:51]--CMD_USER:exec Data/test-1000.sql
+[RECORD_AUDIT: 2018-09-11 18:13:52]--CMD_USER:;
+[RECORD_AUDIT: 2018-09-11 18:14:09]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:14:17]--CMD_USER:drop index pid;
+[RECORD_AUDIT: 2018-09-11 18:14:21]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:14:24]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:14:26]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:14:40]--CMD_USER:create index on person(pid);
+[RECORD_AUDIT: 2018-09-11 18:14:56]--CMD_USER:create index pid on person(pid);
+[RECORD_AUDIT: 2018-09-11 18:15:00]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:15:02]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:15:03]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:15:19]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:15:29]--CMD_USER:drop index pid;
+[RECORD_AUDIT: 2018-09-11 18:15:31]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:15:47]--CMD_USER:create index pid on person(pid);
+[RECORD_AUDIT: 2018-09-11 18:15:55]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:15:56]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:15:57]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:15:58]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:15:59]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:16:00]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:16:00]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:16:01]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:16:02]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:16:03]--CMD_USER:select * from person where pid = 11;
+[RECORD_AUDIT: 2018-09-11 18:17:19]--CMD_USER:select k";
+[RECORD_AUDIT: 2018-09-11 18:17:26]--CMD_USER:select * k";
+[RECORD_AUDIT: 2018-09-11 18:19:30]--CMD_USER:quit
+[RECORD_AUDIT: 2018-09-11 20:02:48]--CMD_USER:select * k"";
+[RECORD_AUDIT: 2018-09-11 20:04:41]--CMD_USER:select * k"";
+[RECORD_AUDIT: 2018-09-11 20:06:19]--CMD_USER:select *k;
+[RECORD_AUDIT: 2018-09-11 20:06:25]--CMD_USER:select *k ";
+[RECORD_AUDIT: 2018-09-11 20:06:56]--CMD_USER:quit
+[RECORD_AUDIT: 2018-09-11 20:07:02]--CMD_USER:select *k"";
+[RECORD_AUDIT: 2018-09-11 20:07:49]--CMD_USER:select *k"";
+[RECORD_AUDIT: 2018-09-11 20:09:12]--CMD_USER:fclose(fp);
+[RECORD_AUDIT: 2018-09-11 20:09:20]--CMD_USER:select *k;
+[RECORD_AUDIT: 2018-09-11 20:10:03]--CMD_USER:select *k;
+[RECORD_AUDIT: 2018-09-11 20:10:31]--CMD_USER:select *k ";
+[RECORD_AUDIT: 2018-09-11 20:11:08]--CMD_USER:select *k;
+[RECORD_AUDIT: 2018-09-11 20:11:42]--CMD_USER:select *k
+[RECORD_AUDIT: 2018-09-11 20:12:09]--CMD_USER:select *k
+[RECORD_AUDIT: 2018-09-11 20:12:47]--CMD_USER:select *k
+[RECORD_AUDIT: 2018-09-11 20:13:13]--CMD_USER:select *k
+[RECORD_AUDIT: 2018-09-11 20:15:02]--CMD_USER:select *k
+[RECORD_AUDIT: 2018-09-11 20:16:06]--CMD_USER:select *k
+[RECORD_AUDIT: 2018-09-11 20:17:21]--CMD_USER:select *k
+[RECORD_AUDIT: 2018-09-11 20:17:57]--CMD_USER:select *k
+[RECORD_AUDIT: 2018-09-11 20:20:34]--CMD_USER:select *
+[RECORD_AUDIT: 2018-09-11 20:20:36]--CMD_USER:k;
+[RECORD_AUDIT: 2018-09-11 20:20:39]--CMD_USER:select *k;
+[RECORD_AUDIT: 2018-09-11 20:34:03]--CMD_USER:select *k
+[RECORD_AUDIT: 2018-09-11 20:34:31]--CMD_USER:select *k
+[RECORD_AUDIT: 2018-09-11 20:35:20]--CMD_USER:select *k
+[RECORD_AUDIT: 2018-09-11 20:35:39]--CMD_USER:select *k
+[RECORD_AUDIT: 2018-09-11 20:36:40]--CMD_USER:exit
+[RECORD_AUDIT: 2018-09-11 20:36:50]--CMD_USER:select *k
+[RECORD_AUDIT: 2018-09-11 20:36:52]--CMD_USER:exit
+[RECORD_AUDIT: 2018-09-11 20:37:38]--CMD_USER:select *k
+[RECORD_AUDIT: 2018-09-11 20:48:25]--CMD_USER:quit
+[RECORD_AUDIT: 2018-09-11 21:08:36]--CMD_USER:select *k
+[RECORD_AUDIT: 2018-09-11 21:16:14]--CMD_USER:exit
+[RECORD_AUDIT: 2018-09-11 23:29:22]--CMD_USER:exit
+[RECORD_AUDIT: 2018-09-11 23:29:51]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-11 23:30:06]--CMD_USER:select *k breakfast;
+[RECORD_AUDIT: 2018-09-11 23:35:48]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-11 23:36:30]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-11 23:36:33]--CMD_USER:exit
+[RECORD_AUDIT: 2018-09-11 23:36:47]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-11 23:37:59]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-11 23:38:59]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-11 23:39:34]--CMD_USER:select *k breakfast from test;
+[RECORD_AUDIT: 2018-09-11 23:44:57]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-11 23:58:27]--CMD_USER:exec test1.sql
+[RECORD_AUDIT: 2018-09-11 23:58:28]--CMD_USER:;
+[RECORD_AUDIT: 2018-09-11 23:59:46]--CMD_USER:exec test1.sql;
+[RECORD_AUDIT: 2018-09-12 00:00:51]--CMD_USER:exec test1.sql;
+[RECORD_AUDIT: 2018-09-12 00:02:48]--CMD_USER:select * from test1;
+[RECORD_AUDIT: 2018-09-12 00:03:14]--CMD_USER:exec test1.sql;
+[RECORD_AUDIT: 2018-09-12 00:03:18]--CMD_USER:select * from test1;
+[RECORD_AUDIT: 2018-09-12 00:05:42]--CMD_USER:insert into test1 values (2, "AB", "We had been wandering, indeed, in the leafless shrubbery an hour in the morning; ");insert into test1 values (2, "AB", "We had been wandering, indeed, in the leafless shrubbery an hour in the morning; ");
+[RECORD_AUDIT: 2018-09-12 00:05:59]--CMD_USER:insert into test1 values (2, "AB", "We had been wandering, indeed, in the leafless shrubbery an hour in the morning; ");
+[RECORD_AUDIT: 2018-09-12 00:06:13]--CMD_USER:select * from test1;
+[RECORD_AUDIT: 2018-09-12 00:07:41]--CMD_USER:exec test1.sql
+[RECORD_AUDIT: 2018-09-12 00:07:42]--CMD_USER:;
+[RECORD_AUDIT: 2018-09-12 00:07:57]--CMD_USER:select * from test1;
+[RECORD_AUDIT: 2018-09-12 00:08:27]--CMD_USER:exec test1.sql;
+[RECORD_AUDIT: 2018-09-12 00:08:33]--CMD_USER:select * from test1;
+[RECORD_AUDIT: 2018-09-12 00:08:37]--CMD_USER:exec test1.sql;
+[RECORD_AUDIT: 2018-09-12 00:13:01]--CMD_USER:exec test1.sql;
+[RECORD_AUDIT: 2018-09-12 00:13:09]--CMD_USER:exec test1.sql;
+[RECORD_AUDIT: 2018-09-12 00:13:28]--CMD_USER:select * from test1;
+[RECORD_AUDIT: 2018-09-12 00:14:01]--CMD_USER:drop table test1;
+[RECORD_AUDIT: 2018-09-12 00:14:03]--CMD_USER:exec test1.sql;
+[RECORD_AUDIT: 2018-09-12 00:14:50]--CMD_USER:exec test1.sql;
+[RECORD_AUDIT: 2018-09-12 00:15:00]--CMD_USER:select * from test1;
+[RECORD_AUDIT: 2018-09-12 00:15:16]--CMD_USER:select *k from test1;
+[RECORD_AUDIT: 2018-09-12 00:15:50]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-12 00:16:01]--CMD_USER:quit
+[RECORD_AUDIT: 2018-09-12 00:16:20]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-12 00:16:50]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-12 00:16:53]--CMD_USER:quit
+[RECORD_AUDIT: 2018-09-12 00:38:45]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-12 00:39:26]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-12 00:39:27]--CMD_USER:exit
+[RECORD_AUDIT: 2018-09-12 00:39:40]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-12 00:40:03]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-12 00:40:04]--CMD_USER:exit
+[RECORD_AUDIT: 2018-09-12 00:40:17]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-12 00:40:59]--CMD_USER:select *k from from test1;
+[RECORD_AUDIT: 2018-09-12 00:41:39]--CMD_USER:select *k torpid from test1;
+[RECORD_AUDIT: 2018-09-12 00:42:03]--CMD_USER:exit
+[RECORD_AUDIT: 2018-09-12 00:42:17]--CMD_USER:select *k breakfast from test1;
+[RECORD_AUDIT: 2018-09-12 00:42:23]--CMD_USER:NUL
+[RECORD_AUDIT: 2018-09-12 00:42:23]--CMD_USER:NUL
+[RECORD_AUDIT: 2018-09-12 00:42:23]--CMD_USER:NUL
+[RECORD_AUDIT: 2018-09-12 00:54:04]--CMD_USER:select *k strike from test1;
+[RECORD_AUDIT: 2018-09-12 00:54:36]--CMD_USER:exec test1.sql
+[RECORD_AUDIT: 2018-09-12 00:54:37]--CMD_USER:;
+[RECORD_AUDIT: 2018-09-12 00:55:04]--CMD_USER:drop table test;
+[RECORD_AUDIT: 2018-09-12 00:55:06]--CMD_USER:drop table test1;
+[RECORD_AUDIT: 2018-09-12 00:55:10]--CMD_USER:exec test1.sql;
+[RECORD_AUDIT: 2018-09-12 00:55:38]--CMD_USER:exec test1.sql;
+[RECORD_AUDIT: 2018-09-12 00:55:43]--CMD_USER:drop table test1;
+[RECORD_AUDIT: 2018-09-12 00:55:45]--CMD_USER:exit
+[RECORD_AUDIT: 2018-09-12 00:55:57]--CMD_USER:exec test1.sql
+[RECORD_AUDIT: 2018-09-12 00:55:58]--CMD_USER:;
+[RECORD_AUDIT: 2018-09-12 00:56:35]--CMD_USER:exec test1.sql
+[RECORD_AUDIT: 2018-09-12 00:56:36]--CMD_USER:;
+[RECORD_AUDIT: 2018-09-12 00:58:07]--CMD_USER:exec test1.sql;
+[RECORD_AUDIT: 2018-09-12 00:58:20]--CMD_USER:drop table test1;
+[RECORD_AUDIT: 2018-09-12 00:58:22]--CMD_USER:exec test1.sql;
+[RECORD_AUDIT: 2018-09-12 00:58:38]--CMD_USER:select * from test1;
+[RECORD_AUDIT: 2018-09-12 00:58:41]--CMD_USER:exec test1.sql;
+[RECORD_AUDIT: 2018-09-12 00:59:06]--CMD_USER:select * from test1 where id=99;
+[RECORD_AUDIT: 2018-09-12 01:00:13]--CMD_USER:drop table test1;
+[RECORD_AUDIT: 2018-09-12 01:00:21]--CMD_USER:exec test1.sql
+[RECORD_AUDIT: 2018-09-12 01:00:22]--CMD_USER:;
+[RECORD_AUDIT: 2018-09-12 01:00:24]--CMD_USER:exec test1.sql;
+[RECORD_AUDIT: 2018-09-12 01:00:53]--CMD_USER:select * from test1 where id=99;
+[RECORD_AUDIT: 2018-09-12 01:01:26]--CMD_USER:select *k strike from test1;
+[RECORD_AUDIT: 2018-09-12 01:01:41]--CMD_USER:exot
+[RECORD_AUDIT: 2018-09-12 01:01:43]--CMD_USER:exit
+[RECORD_AUDIT: 2018-09-12 08:56:12]--CMD_USER:select *k could from test1;
+[RECORD_AUDIT: 2018-09-12 08:56:31]--CMD_USER:select *k room from test1;
+[RECORD_AUDIT: 2018-09-12 08:56:40]--CMD_USER:select *k room from test1;
+[RECORD_AUDIT: 2018-09-12 08:57:26]--CMD_USER:select *k taking from test1;
+[RECORD_AUDIT: 2018-09-12 08:57:32]--CMD_USER:quit
+[RECORD_AUDIT: 2018-09-12 08:57:48]--CMD_USER:select *k taking from test1;
+[RECORD_AUDIT: 2018-09-12 08:58:02]--CMD_USER:select *k room from test1;
+[RECORD_AUDIT: 2018-09-12 08:58:06]--CMD_USER:quit
+[RECORD_AUDIT: 2018-09-12 08:58:16]--CMD_USER:select *k taking from test1;
+[RECORD_AUDIT: 2018-09-12 08:58:25]--CMD_USER:quit
+[RECORD_AUDIT: 2018-09-12 08:58:35]--CMD_USER:select *k room from test1;
+[RECORD_AUDIT: 2018-09-12 09:00:11]--CMD_USER:quit
+[RECORD_AUDIT: 2018-09-12 09:00:24]--CMD_USER:select *k room from test1;
+[RECORD_AUDIT: 2018-09-12 09:00:26]--CMD_USER:select *k room from test1;
+[RECORD_AUDIT: 2018-09-12 09:21:42]--CMD_USER:quit
+[RECORD_AUDIT: 2018-09-12 09:23:49]--CMD_USER:select *k room from test1;
+[RECORD_AUDIT: 2018-09-12 09:23:51]--CMD_USER:select *k room from test1;
+[RECORD_AUDIT: 2018-09-12 09:23:53]--CMD_USER:select *k room from test1;
+[RECORD_AUDIT: 2018-09-12 09:23:54]--CMD_USER:select *k room from test1;
+[RECORD_AUDIT: 2018-09-12 09:23:58]--CMD_USER:quit
