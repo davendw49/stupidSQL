@@ -64,9 +64,11 @@ static int IsUserQuitCmd(char *pszCmd)
 
 static int IsKeyWordCmd(char *pszCmd)
 {
-    char* keySignal = "select * k\"";
-    if (strncasecmp(pszCmd,keySignal,11)==0) {
-        printf("keyword mode\n");
+    char* keySignal = "select *k\"";
+    if (strncasecmp(pszCmd,keySignal,9)==0) {
+        printf("+----------keyword mode----------+\n");
+        printf("|this is our keywordsearch engine|\n");
+        printf("+--------------------------------+\n");
         return 1;
     }
     else return 0;
@@ -155,13 +157,14 @@ static void InitReadLine(void)
 }
 
 int main(void){
+    int begintime,endtime;
     printf("      This is stupidSQL Command!\n");
     printf("      Presented by 邓程, 洪思虹, 许飞, 王鸿, 吴鸿萍\n");
     printf("      Press 'quit' or 'exit' to quit.\n\n");
     InitReadLine();
     while(1) {
         char *pszCmdLine = ReadCmdLine();
-
+        begintime = clock();  //计时开始
         saveToAuditFile(pszCmdLine);
         rollBackTranslate(pszCmdLine);
 
@@ -174,8 +177,9 @@ int main(void){
 
         if (IsKeyWordCmd(pszCmdLine))
         {
-            printf("yes\n");
-            keywordSearch();
+            //printf("yes\n");
+            keywordSearch("breakfast",storage_command);
+            //break;
         }
         /*if(in("exec",pszCmdLine)) {
             FLAG_RECORD_INFO=0;printf("[Debug]Disable output\n");
@@ -187,6 +191,9 @@ int main(void){
             FLAG_RECORD_INFO=1;
         }
         //FLAG_INPUT_FINISH=1;
+        endtime = clock();  //计时开始
+        //printf("%d\n", FLAG_INPUT_FINISH);
+        if (FLAG_INPUT_FINISH) printf("Running Time：%dms\n", endtime-begintime);
     }
 
     return 0;

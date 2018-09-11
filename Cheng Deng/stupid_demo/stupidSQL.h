@@ -7,6 +7,7 @@
 #define NOBUFFER
 #define DEBUG
 #include <stdio.h>
+int answer[100];
 // three types of data, int, float, and string (the size of a string is between 0 and 255)
 enum DataType {intType, floatType, stringType};
 struct AttributeRecord
