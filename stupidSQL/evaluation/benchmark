@@ -1,0 +1,11 @@
+exec evaluation/test-1000.sql;
+exec evaluation/test-keyword.sql;
+select *k seat from story;
+select *k breakfast from story;
+select *k could from story;
+select *k from from story;(如果测试这个就别测试上面的全部三个，测其中的一个就好)
+
+select * from person where pid=34;
+drop index pid;
+select * from person where pid=34;
+
