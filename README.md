@@ -1,9 +1,9 @@
-# stupidSQL
+# stupidSQL（具有基于倒排索引关键词搜索功能的关系型数据库管理系统）
 This is a tiny and stupid DataBase implemented by our team.
 
 我们基于浙江大学数据库实践课程的大设计miniSQL的buffer和catalog代码，重构了record机制、interpreter机制和去除了我们认为冗余的api机制，添加了基于倒排索引的关键词查询功能，基于字符语义分析的审计回滚机制，简单的实现了一个可以使用关键词搜索的关系型数据库。
 
-# Introduction
+# 基本介绍
 stupidSQL支持属性的以下数据类型：
 
 * int
@@ -52,7 +52,7 @@ exec fileName.sql
 ```sql
 select *k keyword from tablename; 
 ```
-#### Detailed Specification
+# 细节垂述
 stupidSQL基本组成部分：
 
 * `interpreter`
@@ -81,11 +81,11 @@ stupidSQL基本组成部分：
 
 
 
-
+# 感谢
 在此感谢浙江大学[郭爽](https://github.com/sbj1234567892010)同学的鼎力相助！
 
 
-#Reference
+# 引用
 * [MiniSQL](https://github.com/davendw49/Awwwesome-MiniSQL "MiniSQL")
 
 * [《MySQL核心内幕》](https://book.douban.com/subject/4219798/)
