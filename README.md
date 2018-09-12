@@ -41,12 +41,17 @@ insert into tableName values (valueA, valueB, valueC);
 delete from tableName where attrA >= X and attrB < Y;
 ```
 * quit
-
+```sql
+quit or exit
+```
 * import SQL file
 ```sql
 exec fileName.sql
 ```
-
+* keyword search
+```sql
+select *k keyword from tablename; 
+```
 #### Detailed Specification
 stupidSQL基本组成部分：
 
