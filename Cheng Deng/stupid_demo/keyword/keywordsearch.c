@@ -31,7 +31,7 @@ char* search(char *kw)
 	if((fp = fopen(filename,"r")) == NULL)
 	{
 		printf("error!");
-		return -1;
+		return NULL;
 	}
 	while (!feof(fp))
 	{
@@ -66,11 +66,10 @@ char* search(char *kw)
 }
 
 int keywordSearch(char *input){
-	int i,len,kwlinestart,kwlineend,tablelinestart,tablelineend,j;
-	int answer[100];
+	int i,len,kwlinestart,kwlineend,tablelinestart,tablelineend;
 	int time=0;
-	static char kw[]="";
-	static char tb[]="";
+	static char kw[10]="";
+	static char tb[10]="";
 	//char* cmd = "select *k breakfast from test1;";
 	char* cmd = input;
 	char queryhead[100] = "select * from ";
@@ -115,10 +114,8 @@ int keywordSearch(char *input){
 	char* result = search(kw);
 	char delims[] = ",";
 	char *r = NULL;
-	char* idlist[100];
 	//printf("%s\n", result);
 	r = strtok(result, delims);
-	int pos=0;
 	while(r!= NULL )
 	{
 		char *str = malloc(sizeof(char)*strlen(queryhead));
@@ -133,6 +130,8 @@ int keywordSearch(char *input){
 		//printf("%s\n", str);
 		interpreter(str);
 		r=strtok(NULL,delims);
+		free(str);
 	}
 	return 0;
+
 }

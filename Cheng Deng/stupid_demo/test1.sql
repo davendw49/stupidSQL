@@ -1,4 +1,4 @@
-create table test1 ( id int, name char(32), text char(255), primary key(id) );
+create table test1 ( id int, name char(8), text char(160), primary key(id) );
 insert into test1 values (1, "AA", "There was no possibility of taking a walk that day. ");
 insert into test1 values (2, "AB", "We had been wandering- indeed- in the leafless shrubbery an hour in the morning. ");
 insert into test1 values (3, "AC", "I was glad of it: I never liked long walks- especially on chilly afternoons: ");
@@ -26,7 +26,7 @@ insert into test1 values (24, "AY", "Each picture told a story- mysterious often
 insert into test1 values (25, "AZ", "yet ever profoundly interesting: as interesting as the tales Bessie sometimes narrated on winter evenings. ");
 insert into test1 values (26, "BA", "With Bewick on my knee- I was then happy: happy at least in my way. I feared nothing but interruption- and that came too soon. ");
 insert into test1 values (27, "BB", "“Boh! Madam Mope!” cried the voice of John Reed- then he paused: he found the room apparently empty.");
-insert into test1 values (28, "BC", "“Where the dickens is she!” he continued. “Lizzy! Georgy! (calling to his sisters) Joan is not here: tell mama she is run out into the rain—bad animal!”");
+insert into test1 values (28, "BC", "Where the dickens is she! he continued. Lizzy! Georgy! calling to his sisters Joan is not here: tell mama she is run out into the rain—bad animal!");
 insert into test1 values (29, "BD", "“It is well I drew the curtain-” thought I. ");
 insert into test1 values (30, "BE", " and I wished fervently he might not discover my hiding-place: nor would John Reed have found it out himself-");
 insert into test1 values (31, "BF", "he was not quick either of vision or conception- but Eliza just put her head in at the door- and said at once—");
@@ -56,7 +56,7 @@ insert into test1 values (54, "CE", " I mused on the disgusting and ugly appeara
 insert into test1 values (55, "CR", " I wonder if he read that notion in my face- for- all at once- without speaking- he struck suddenly and strongly.");
 insert into test1 values (56, "CT", " I tottered- and on regaining my equilibrium retired back a step or two from his chair.");
 insert into test1 values (57, "CY", "the more refined idea that John’s sallowness was owing to over-application and- perhaps- to pining after home.");
-insert into test1 values (58, "CU", "but since dinner (Mrs. Reed- when there was no company- dined early) the cold winter wind had brought with it clouds so sombre");
+insert into test1 values (58, "CU", "but since dinner Mrs. Reed- when there was no company- dined early the cold winter wind had brought with it clouds so sombre");
 insert into test1 values (59, "CI", "- and a rain so penetrating- that further out-door exercise was now out of the question.");
 insert into test1 values (60, "CO", "dreadful to me was the coming home in the raw twilight- with nipped fingers and toes. ");
 insert into test1 values (61, "CP", "and a heart saddened by the chidings of Bessie- the nurse- and humbled by the consciousness of my physical inferiority to Eliza- John- and Georgiana Reed.");
